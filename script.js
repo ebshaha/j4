@@ -63,7 +63,7 @@ function updateTime() {
    const seconds = Math.floor((elapsed % (1000 * 60)) / 1000);
 
    document.getElementById('timer').innerHTML = `${days} dias, ${hours} horas, ${minutes} minutos, ${seconds} segundos`;
-   document.getElementById('msg').innerHTML = `<b>Lembrete do dia:</b> ${msg[Math.floor(elapsed / (1000 * 60 * 60 * 24))]}`;
+   document.getElementById('msg').innerHTML = `<b>Lembrete do dia:</b> ${msg[Math.floor(elapsed / (1000 * 60 * 60 * 24)) - 5]}`;
 }
 
 updateTime()
